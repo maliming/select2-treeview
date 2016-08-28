@@ -1,0 +1,28 @@
+
+.select2-container--default .select2-results>.select2-results__options   {
+    max-height: 300px;
+}
+
+.tree .triangle{
+    border-style: solid;
+    width: 0px;
+    height: 0px;
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+    position: relative;
+}
+.tree .down{
+    border-width: 7px 5px 0 5px;
+    border-color: #888 transparent transparent transparent;
+}
+
+.tree .right{
+    border-color: transparent transparent transparent #888;
+    border-width: 5px 0px 5px 7px;
+    margin-right: 8px;
+}
+
+.treeitem{
+    margin-left:10px;
+}
