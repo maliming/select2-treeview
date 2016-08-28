@@ -1373,6 +1373,10 @@ S2.define('select2/selection/base',[
     });
 
     container.on('selection:update', function (params) {
+      if(params.data.length > 1)
+      {
+        params.data.splice(0,1)
+      }
       self.update(params.data);
     });
 
@@ -1529,6 +1533,10 @@ S2.define('select2/selection/single',[
     });
 
     container.on('selection:update', function (params) {
+      if(params.data.length > 1)
+      {
+        params.data.splice(0,1)
+      }
       self.update(params.data);
     });
   };
